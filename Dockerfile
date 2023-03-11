@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /home/ubuntu/projects/fastApi-example
+
 
 COPY ./requirements.txt /home/ubuntu/projects/fastApi-example/requirements.txt
 
