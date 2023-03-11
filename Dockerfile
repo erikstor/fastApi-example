@@ -6,6 +6,6 @@ COPY ./requirements.txt /home/ubuntu/projects/fastApi-example/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /home/ubuntu/projects/fastApi-example/requirements.txt
 
-COPY ./app /home/ubuntu/projects/fastApi-example/
+COPY /home/ubuntu/projects/fastApi-example/ ./app
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
